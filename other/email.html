@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Info -->
+    <meta charset="UTF-8">
+    <meta name="description" content="BU MET CS601 - Assignment 01">
+    <meta name="keywords" content="BU, MET, CS601, Assignment01, HTML">
+    <meta name="author" content="Miffy Chen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta property="og:url" content="https://miffychen.com/web/">
+    <!-- Favicon -->
+    <!-- Title -->
+    <title>Miffy Chen ::: Email Me</title>
+    <!-- Stylesheets -->
+    <!-- Scripts -->
+</head>
+
+<body>
+
+    <h1>Send me an e-mail!</h1>
+
+    <section id="email-me">
+        <form action="https://formspree.io/m4jp6tp6@gmail.com" method="POST">
+            Name: <br />
+            <input id="name" type="text" name="name" placeholder="Name *" required autofocus><br />
+            E-mail:<br />
+            <input id="email" type="email" name="email" placeholder="Email address *" required><br />
+            Message:<br />
+            <textarea id="message" name="message" placeholder="Write me a message*" rows="4" required></textarea><br />
+            <input type="submit" value="Send email!">
+            <input type="reset" value="Reset">
+        </form>
+    </section>
+
+</body>
+
+</html>
