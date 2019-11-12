@@ -1,0 +1,24 @@
+@media print {
+
+    /* set page size and orientation */
+    @page {
+        size: 8.5in 11in portrait;
+        margin: 2cm;
+    }
+
+    /* leave out these elements */
+    header nav, video, audio {
+        display: none;
+    }
+
+    /* resize image */
+    img {
+        /* set size constrains */
+        max-width: 8in;
+        max-height: 10.5in;
+        /* keep aspect ratio */
+        width: auto;
+        height: auto;
+    }
+
+}
