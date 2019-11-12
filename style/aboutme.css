@@ -1,0 +1,13 @@
+/* aboutme.html : profile_card */
+@import url("profile_card.css");
+
+/* aboutme.html : more_info */
+
+.container_flex .hobbies ul {
+    margin-block-start: 1em;
+    margin-block-start: 0.5em;
+}
+
+.container_flex .biography {
+    flex-basis: 40%;
+}

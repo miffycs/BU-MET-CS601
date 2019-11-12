@@ -41,54 +41,87 @@
         <section class="intro">
             <p>
                 I am an animal lover, I have a dog back home who lives with my parents,<br />
-                and I've adopted cats from <a href="https://www.mspca.org/" target="_blank">MSPCA</a>, which is a local shelter here in Boston.
+                and I've adopted cats from <a href="https://www.mspca.org/" target="_blank">MSPCA</a>,
+                which is a local shelter here in Boston.
             </p>
         </section>
 
-        <!-- Requirement #4: Image -->
-        <!-- Requirement #8: Video Element -->
+
         <section class="media">
 
-            <h2>Photos & Videos:</h2>
+            <h2>Photos:</h2>
             
-            <!-- using table to style photos because CSS not allowed, technically not styling, right? :) -->
-            <table>
-                <tr>
-                    <th><strong>Miru</strong></th>
-                    <th><strong>Kakashi</strong></th>
-                </tr>
-                <tr>
-                    <td>
-                        <figure>
-                            <img src="assets/img/miru.jpg" alt="Miru" width="280" height="372" />
-                            <figcaption>This is Miru, she loves interrupting me when <em>she thinks</em> I'm not doing any important work.</figcaption>
-                        </figure>
-                    </td>
-                    <td>
-                        <figure>
-                            <img src="assets/img/kakashi.jpg" alt="Kakashi" width="210" height="372" />
-                            <figcaption>
-                                This is Kakashi, she was badly injured from a fight on the streets before she was brought to the shelter in critical condition.
-                                She's named after a <a href="https://naruto.fandom.com/wiki/Kakashi_Hatake" target="_blank">ninja character</a> from the Naruto comic books who's also injured in one eye.
-                            </figcaption>
-                        </figure>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <video controls>
-                            <source src="assets/vid/miru.mp4" type="video/mp4" />
-                            Your browser does not support the video tag!
-                        </video>
-                    </td>
-                    <td>
-                        <video controls>
-                            <source src="assets/vid/kakashi.mp4" type="video/mp4" />
-                            Your browser does not support the video tag!
-                        </video>
-                    </td>
-                </tr>  
-            </table>
+            <div class="container_album">
+
+                <div class="polaroid" id="miru">
+                    <figure>
+                        <div class="film_wrapper">
+                            <img src="assets/img/miru.jpg" alt="Miru" />
+                        </div>
+                        <figcaption class="caption">
+                            <p>Miru</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                
+                <div class="polaroid" id="kakashi">
+                    <figure>
+                        <div class="film_wrapper">
+                            <img src="assets/img/kakashi.jpg" alt="Kakashi" />
+                        </div>
+                        <figcaption class="caption">
+                            <p>Kakashi</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="polaroid" id="popo">
+                    <figure>
+                        <div class="film_wrapper">
+                            <img src="assets/img/kakashi.jpg" alt="Popo" />
+                        </div>
+                        <figcaption class="caption">
+                            <p>Popo</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="polaroid" id="lucky">
+                    <figure>
+                        <div class="film_wrapper">
+                            <img src="assets/img/kakashi.jpg" alt="Lucky" />
+                        </div>
+                        <figcaption class="caption">
+                            <p>Lucky</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+
+            <h2>Videos:</h2>
+
+            <section class="videos container_flex">
+                <div class="video_player">
+                    <video controls>
+                        <source src="assets/vid/miru.mp4" type="video/mp4" />
+                        Your browser does not support the video tag!
+                    </video>
+                </div>
+                
+                <div class="video_player">
+                    <video controls>
+                        <source src="assets/vid/kakashi.mp4" type="video/mp4" />
+                        Your browser does not support the video tag!
+                    </video>
+                </div>
+            </div>
+            
+            <!-- This is Miru, she loves interrupting me when <em>she thinks</em> I'm not doing any important work.
+        
+            This is Kakashi, she was badly injured from a fight on the streets before she was brought to the shelter in critical condition.
+            She's named after a <a href="https://naruto.fandom.com/wiki/Kakashi_Hatake" target="_blank">ninja character</a> from the Naruto comic books who's also injured in one eye. -->
 
         </section>
         

@@ -1,12 +1,17 @@
-/* @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Roboto:300,400,500,700,900&display=swap); */
+/* 
+ * This file contains the CSS styles of all of the webpages.
+ * However, page specific styles are imported using @import for clarity
+ * (some of my files are really large),
+ * but I believe this still satisfy the requirement as 
+ * all common styling of header, main, & footer shared between the files
+ * are still stored in 1 file (here).
+ */
 
-body {
-    /* width: 100%; */
-    /* height: 100%; */
-    /* font-family: 'Roboto', sans-serif; */
-    /* font-family: 'Lato', sans-serif; */
-    font-size: 16px;
-}
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap);
+@import url(aboutme.css);
+@import url(biography.css);
+@import url(mycats.css);
 
 /* header (start) */
 
@@ -17,6 +22,8 @@ body {
     justify-content: flex-start;
     align-self: center;
     margin: 0 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 .header_wrapper .site_logo {
@@ -24,14 +31,16 @@ body {
 }
 
 .header_wrapper .course_title {
-    font: 2em bold;
+    margin-top: 6px;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 nav {
     position: relative;
     list-style: none;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     flex: 1;
 }
 
@@ -69,8 +78,13 @@ nav li a:active {
 
 /* header (end) */
 
+
+/* main (start) */
+
 main {
     margin: auto 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 h1 {
@@ -103,136 +117,29 @@ h2 {
     align-items: baseline;
 }
 
-.container_flex .hobbies ul {
-    margin-block-start: 1em;
-    margin-block-start: 0.5em;
+.long_paragraphs p {
+    text-indent: 50px;
+    line-height: 180%;
 }
 
-.container_flex .biography {
-    flex-basis: 40%;
-}
+/* 
+ * Tip!!
+ * See page specific styles in the imports
+ *  at the top of the page!
+ */
 
 /* .img_dim {
-    filter: contrast(70%) brightness(90%) blur(1px);
+    filter: contrast(70%) brightness(90%) opacity(90%) blur(1px);
 } */
 
-/* aboutme.html : profile_card (start) */
+/* main (end) */
 
-.profile_card .hint {
-    margin-top: -15px;
-    text-align: center;
-}
 
-.container_profile_card {
-    position: relative;
-    margin: 20px auto;
-    height: 250px;
-    max-width: 500px;
-    overflow: hidden;
-}
-
-.container_profile_card .card {
-    position: relative;
-    height: 250px;
-}
-
-.card:hover .card_hidden {
-    display: block;
-    top: 0;
-    left: 0;
-    background: rgba(217, 14, 14, 0.85);
-    color: rgba(255, 255, 255, 1);
-}
-
-.card_left img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: inherit;
-    height: 100%;
-    width: auto;
-    float: left;
-    transition: all 0.8s;
-}
-
-.card_left .card_hidden {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    width: 42%;
-    height: 89%;
-    padding: 3% 4%;
-    background: rgba(217, 14, 14, 0.85);
-    color: rgba(255, 255, 255, 1);
-    transition: all 0.5s ease-in-out;
-}
-
-.card_hidden .name {
-    margin: 0;
-    padding: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 25px;
-    font-weight: 300;
-}
-
-.card_hidden .title {
-    margin: 0;
-    margin-right: 10px;
-    padding: 0 0 13px 0;
-    width: 90%;
-    font-size: 13px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
-.card_hidden .title span {
-    position: absolute;
-    top: 62px;
-    right: 20px;
-}
-
-.card_hidden hr {
-    font-size: 8px;
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.card_hidden .description {
-    padding-top: 13px;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.card_right {
-    position: absolute;
-    left: 50%;
-    width: 50%;
-    height: inherit;
-    padding: 20px 20px 20px 30px;
-    background: rgb(238, 238, 238);
-    color: #000000;
-}
-
-.card_right .name {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 20px auto;
-    padding-left: 40px;
-}
-
-.card_right table {
-    font-size: 14px;
-    line-height: 30px;
-}
-
-.card_right table img {
-    height: 20px;
-}
-
-/* aboutme.html : container_profile_card (end) */
+/* footer */
 
 footer {
     margin-top: 20px;
-    font-size: 0.8em;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
 }
