@@ -5,6 +5,8 @@
  * but I believe this still satisfy the requirement as 
  * all common styling of header, main, & footer shared between the files
  * are still stored in 1 file (here).
+ * 
+ * (All CSS files are able to pass validation on their own!!)
  */
 
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900&display=swap);
@@ -116,6 +118,17 @@ h2 {
     justify-content: space-around;
     align-items: baseline;
 }
+
+/* aboutme.html : more_info */
+.container_flex .hobbies ul {
+    margin-block-start: 1em;
+    margin-block-start: 0.5em;
+}
+
+.container_flex .biography {
+    flex-basis: 40%;
+}
+/* aboutme.html : more_info */
 
 .long_paragraphs p {
     text-indent: 50px;
