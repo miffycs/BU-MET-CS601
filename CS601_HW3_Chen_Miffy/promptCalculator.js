@@ -36,10 +36,7 @@ function isInt(n) {
 }
 
 function validateNum(sum) {
-  if (isFloat(sum) || isInt(sum)) {
-    return true;
-  }
-  return false;
+  return isFloat(sum) || isInt(sum);
 }
 
 function sumEval(sum) {
