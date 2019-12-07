@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Meta Info -->
+  <meta charset="UTF-8">
+  <meta name="description" content="BU MET CS601 - Assignment 06">
+  <meta name="keywords" content="BU, MET, CS601, Assignment06, HTML">
+  <meta name="author" content="Miffy Chen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Favicon -->
+  <!-- Title -->
+  <title>HW 6</title>
+  <!-- Stylesheets -->
+  <!-- Scripts -->
+  <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+</head>
+
+<body>
+  <table style="border: 2px solid black;">
+    <tr style="border: 2px solid black;">
+      <td style="border: 2px solid red;"><img src="01.png" /></td>
+      <td style="border: 2px solid orange;"><img src="02.png" /></td>
+      <td style="border: 2px solid yellow;"><img src="03.png" /></td>
+      <td style="border: 2px solid green;"><img src="04.png" /></td>
+      <td style="border: 2px solid blue;"><img src="05.png" /></td>
+    </tr>
+  </table>
+  <input type="button" value="HIDE ALL" id="hideAll" />
+  <input type="button" value="SHOW EVEN" id="showEven" />
+  <input type="button" value="SHOW ODD" id="showOdd" />
+  <input type="button" value="LEFT SHIFT" id="leftShift" />
+  <input type="button" value="RIGHT SHIFT" id="rightShift" />
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("img").addClass("wrappedElement");
+
+      $("#hideAll").click(() => {
+        $("img").hide();
+      });
+
+      $("#showEven").click(() => {
+        var i = 1;
+        $(".wrappedElement").each(function () {
+          if (i % 2 == 0) {
+            $(this).show();
+          }
+          i++;
+        });
+      });
+      
+      $("#showOdd").click(() =>  {
+        var i = 1;
+        $(".wrappedElement").each(function () {
+          if (i % 2 != 0) {
+            $(this).show();
+          }
+          i++;
+        });
+      });
+
+      $("#leftShift").click(() =>  {
+        var elm1;
+        var elm2;
+        var i = 0;
+        $(".wrappedElement").each(function () {
+          if ($(this).is(":visible") == true) {
+            if (i == 0) {
+              elm1 = this;
+              i++;
+            } else {
+              elm2 = this;
+            }
+          }
+        });
+        $(elm2).parent().after($(elm1).parent());
+        // elm1.parent().remove();
+      });
+
+      $("#rightShift").click(() => {
+        var elm1;
+        var elm2;
+        var i = 0;
+        $(".wrappedElement").each(function () {
+          if ($(this).is(":visible") == true) {
+            if (i == 0) {
+              elm1 = this;
+              i++;
+            } else {
+              elm2 = this;
+            }
+          }
+        });
+        $(elm1).parent().before($(elm2).parent());
+      });
+
+    });
+  </script>
+</body>
+
+</html>
