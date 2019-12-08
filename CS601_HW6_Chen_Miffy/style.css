@@ -3,28 +3,37 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+    background: linear-gradient(236deg, #74ebd5, #acb6e5);
     font-family: 'Roboto', sans-serif;
 }
 
-h1 {
+header > h1 {
     /* margin: 20px auto; */
     text-align: center;
     font-size: 4em;
 }
 
-.content-wrapper > table {
+.content-wrapper {
     margin: 150px auto;
-    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     /* border: 3px solid green; */
 }
 
+/* each parent div of .wrappedElement images */
+.content-wrapper > div {
+    padding: 10px;
+}
+
+/* each img element */
 .wrappedElement {
     border: 3px solid rgb(255, 0, 0);
     width: 200px;
     height: 200px;
 }
 
+/* list of buttons */
 .controls {
     margin: 0 200px;
     display: flex;
@@ -33,6 +42,7 @@ h1 {
     /* background-color: blue; */
 }
 
+/* button style */
 .controls > input[type=button] {
     border: 2px solid #888888;
     border-radius: 10px;
@@ -41,7 +51,6 @@ h1 {
     text-align: center;
     font-size: 1.2rem;
 }
-
 .controls > input[type=button]:hover {
     background-color: #bdbdbd;
     transform: translateY(-2px);
