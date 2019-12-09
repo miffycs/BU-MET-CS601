@@ -1,0 +1,115 @@
+<h1 class="cd-headline letters type"><span>Hi, I'm Miffy. I like building</span><br>
+    <span class="cd-words-wrapper">
+        <b class="is-visible">
+            software.</b>
+        <b>web applications.</b>
+        <b>android applications.</b>
+        <b>iOS applications.</b>
+        <b>cool scripts.</b>
+    </span>
+</h1>
+
+
+<style>
+
+.cd-words-wrapper {
+display: inline-block;
+position: relative;
+text-align: left
+}
+.cd-words-wrapper b {
+display: inline-block;
+position: absolute;
+white-space: nowrap;
+left: 0;
+top: 0
+}
+.cd-words-wrapper b.is-visible {
+position: relative
+}
+.no-js .cd-words-wrapper b {
+opacity: 0
+}
+.no-js .cd-words-wrapper b.is-visible {
+opacity: 1
+}
+.cd-headline.type .cd-words-wrapper {
+vertical-align: top;
+overflow: hidden
+}
+
+.cd-headline.type .cd-words-wrapper::after {
+content: '';
+position: absolute;
+right: 0;
+top: 50%;
+bottom: auto;
+-webkit-transform: translateY(-50%);
+transform: translateY(-50%);
+height: 90%;
+width: 1px;
+background-color: #aebcb9
+}
+.cd-headline.type .cd-words-wrapper.waiting::after {
+-webkit-animation: cd-pulse 1s infinite;
+animation: cd-pulse 1s infinite
+}
+.cd-headline.type .cd-words-wrapper.selected {
+background-color: #93a4aa
+}
+.cd-headline.type .cd-words-wrapper.selected::after {
+visibility: hidden
+}
+.cd-headline.type .cd-words-wrapper.selected b {
+color: #2A3A3F
+}
+.cd-headline.type b {
+visibility: hidden
+}
+.cd-headline.type b.is-visible {
+visibility: visible;
+font-style: normal
+}
+.cd-headline.type i {
+position: absolute;
+visibility: hidden;
+font-style: normal
+}
+.cd-headline.type i.in {
+position: relative;
+visibility: visible;
+font-style: normal
+}
+@-webkit-keyframes cd-pulse {
+0% {
+-webkit-transform: translateY(-50%) scale(1);
+opacity: 1
+}
+40% {
+-webkit-transform: translateY(-50%) scale(0.9);
+opacity: 0
+}
+100% {
+-webkit-transform: translateY(-50%) scale(0);
+opacity: 0
+}
+}
+@keyframes cd-pulse {
+0% {
+-webkit-transform: translateY(-50%) scale(1);
+transform: translateY(-50%) scale(1);
+opacity: 1
+}
+40% {
+-webkit-transform: translateY(-50%) scale(0.9);
+transform: translateY(-50%) scale(0.9);
+opacity: 0
+}
+100% {
+-webkit-transform: translateY(-50%) scale(0);
+transform: translateY(-50%) scale(0);
+opacity: 0
+}
+}
+
+</style>

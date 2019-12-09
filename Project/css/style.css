@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap);
+
+@import url(reset.css);
+@import url(grid.css);
+@import url(page_attr.css);
+
+@import url(about.css);
+@import url(photo_album.css);
+
+body {
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    background: url("../assets/img/bu_campus_filtered.png") center no-repeat fixed;
+}
+
+a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+p::selection {
+    background: #fff2a8;
+}
+
+.paragraph p {
+    margin: 5%;
+    text-indent: 50px;
+    line-height: 2.2em;
+}
+
+main {
+    margin: auto 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.page-title {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+h2 {
+    margin-bottom: 0em;
+}
+
+.container_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+/* aboutme.html : more_info */
+.container_flex .hobbies ul {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.container_flex .biography {
+    flex-basis: 40%;
+}
+/* aboutme.html : more_info */
