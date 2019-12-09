@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+@import url(https://fonts.googleapis.com/css?family=Major+Mono+Display);
 
 .new-year {
-    font-family: 'Major Mono Display', monospace;
-    color: #333333;
-    font-size: 20px;
     position: absolute;
     left: 50%;
     top: 50%;
     width: 100%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
+    font-family: 'Major Mono Display', monospace;
+    font-size: 20px;    
     text-align: center;
+    color: #333333;
 }
 
 .year {
@@ -20,7 +20,7 @@
     transform: translateX(-50%);
 }
 
-.year2 {
+.year_reflection {
     transform: translateX(-50%) rotateX(180deg);
     opacity: 0.2;
 }

@@ -1,7 +1,14 @@
+/* @import url(reset.css); */
+@import url(grid.css);
+
 /* testing purposes to see outline */
 /* [class*="col-"] {
     border: 2px solid red;
 } */
+
+nav {
+    font-family: 'Lato', sans-serif;
+}
 
 nav a {
     text-decoration: none;
@@ -84,10 +91,22 @@ img[alt="BU logo"] {
     #navigation-container li {
         padding-top: 23px;
         padding-bottom: 23px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     #navigation-container li:hover {
         transform: translateY(-2px);
+    }
+
+    /* custom width */
+    #navigation-container .row .col-1#course_eval {
+        width: 11.4%;
+        min-width: 93px;
+    }
+    #navigation-container .row .col-1#newyearcountdown {
+        width: 14.5%;
+        min-width: 132px;
     }
 }
 

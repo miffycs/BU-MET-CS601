@@ -61,7 +61,7 @@ ul {
     list-style: none;
 }
 
-input,
+/* input,
 textarea,
 button {
     border: 0;
@@ -85,4 +85,4 @@ button:hover,
 button:active,
 button:focus {
     outline: none;
-}
+} */
