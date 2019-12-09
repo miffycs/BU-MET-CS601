@@ -14,6 +14,7 @@
     <title>Miffy Chen ::: Photo Album</title>
     <!-- Stylesheets -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/modal.css">
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
@@ -42,6 +43,13 @@
             </p>
         </section>
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+        
         <!-- have both JS and jQuery versions of writing to DOM -->
         <section id="photos" class="photos">
         </section>

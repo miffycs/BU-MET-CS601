@@ -30,7 +30,7 @@ function appendData(data) {
     const pets = data;
 
     // create album
-    let container_album = $('<div/>', { class: 'container_album' });
+    let container_album = $('<div/>', { class: 'container_album', id: 'pet-album' });
 
     // let container_wrapper = $('<div/>', { class: 'container_wrapper' });
     
@@ -40,13 +40,15 @@ function appendData(data) {
 
         for (let i = 1; i <= pet["num"]; i++) {
 
-            let polaroid = $('<div/>', { class: 'polaroid' });
+            // let polaroid = $('<div/>', { class: 'polaroid' });
+            let polaroid = $('<div/>', { class: 'polaroid', id: `polaroid-${pet["id"]}0${i}` });
             let fig = $('<figure/>');
             let film_wrapper = $('<div/>', { class: 'film_wrapper' });
             let figcaption = $('<figcaption/>', { class: 'caption' });
 
             $(film_wrapper).append(
                 $('<img>', {
+                    id: `${pet["id"]}0${i}`,
                     src: `${pet["url"]}0${i}.jpg`,
                     alt: pet["alt"],
                 })
@@ -64,4 +66,31 @@ function appendData(data) {
     });
 
     $("#photos").append(container_album);
+};
+
+
+window.onload = function() {
+
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+
+    $("#pet-album").on("click", ".polaroid", function (event) {
+        console.log(this.id);
+        console.log(this.querySelector("img").id);
+
+        let img = this.querySelector("img");
+
+        modal.style.display = "block";
+        modalImg.src = img.src;
+        captionText.innerHTML = img.alt;
+    });
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
 };
