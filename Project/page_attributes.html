@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Favicon -->
     <!-- Title -->
-    <title>Page Attributes</title>
+    <title>Miffy Chen::: Page Attributes</title>
     <!-- Stylesheets -->
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <!-- Scripts -->
@@ -21,6 +21,7 @@
 
 <body>
 
+    <!-- nav to be appended to headers in other pages -->
     <nav class="navigation-bar">
         <div id="navigation-container">
             <ul class="row">
@@ -44,9 +45,6 @@
                 <li class="col-1">
                     <a href="contact.html">Contact</a>
                 </li>
-                <li class="col-1" id="course_eval">
-                    <a href="course_eval.html">Course Eval</a>
-                </li>
                 <li class="col-1" id="newyearcountdown">
                     <a href="newyearcountdown.html">2020 Countdown</a>
                 </li>
@@ -54,6 +52,20 @@
         </div>
     </nav>
 
+    <!-- explaination, can ignore -->
+    <main>
+        <div class="page-title">(Template Page)</div>
+
+        <section class="paragraph">
+            <p>
+                Oops! You have reached a template page!<br>
+                This page only exists to serve as a template page to be pulled from.<br>
+                Every other page grabs their headers (navigation bar) and footer from this page using jQuery.
+            </p>
+        </section>
+    </main>
+
+    <!-- details in footer to be appended to footers on other pages -->
     <footer>
         <details id="footer-details">
             <summary>Copyright &copy; 2019 ::: Miffy Chen</summary>
@@ -63,6 +75,7 @@
         </details>
     </footer>
 
+    <!-- other pages uses this JS to grab nav-bar and footer details -->
     <!-- <script src="js/loadPageAttributes.js"></script> -->
 
 </body>

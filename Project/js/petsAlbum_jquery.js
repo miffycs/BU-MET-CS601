@@ -18,6 +18,8 @@ function makeRequest(url_pets) {
             let pets = dataObj.pets;
             appendData(pets);
 
+            // after data is appended,
+            // start this to listen for clicks on polaroids
             checkClicks();
         }
     };

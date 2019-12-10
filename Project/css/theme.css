@@ -30,7 +30,9 @@ main {
 
 .paragraph p {
     margin: 5%;
-    text-indent: 50px;
     line-height: 2.2em;
 }
 
+.indent {
+    text-indent: 50px;
+}

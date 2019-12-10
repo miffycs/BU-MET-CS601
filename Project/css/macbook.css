@@ -1,10 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
-
-body {
-  font-family: "Roboto", monospace;
-  background: rgba(0, 0, 0, 0) radial-gradient(circle, #fff 20%, #999) repeat scroll 0 0;
-}
-
 .macbook {
   padding: 4% 6%;
   margin: 0 auto;
@@ -99,7 +92,7 @@ body {
 /* Screenshot Hover Scroll Additions */
 
 .macbook .viewport {
-  transition: background-position 4s ease;
+  transition: background-position 6s ease;
   background-position: 0 0;
   background-size: 100% auto;
   overflow: hidden;
@@ -124,14 +117,12 @@ body {
 /* Text Pulse */
 
 .pulse {
-  font-family: inherit;
   width: 100%;
-  margin-top: 1%;
-  text-align: center;
-  font-size: 3pc;
+  margin: 1% auto;
   color: rgb(155, 155, 155);
-  /* font-weight: bold; */
-  /* animation: 3s pulse infinite; */
+  text-align: center;
+  font-size: 2em;
+  animation: 3s pulse 10;
 }
 
 @keyframes pulse {
@@ -139,7 +130,7 @@ body {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 }
 

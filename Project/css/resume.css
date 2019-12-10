@@ -21,159 +21,176 @@ body {
     padding-bottom: 50px;
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
 .container {
-    max-width: 700px;
-    background: #ffffff;
-    margin: 0px auto 0px;
-    box-shadow: 1px 1px 2px #d9d9d9;
-    padding: 40px;
-    margin-top: 50px;
+    display: none;
 }
 
-.clear {
-    clear: both;
-    margin-bottom: 20px;
-}
+@media only screen and (min-width: 768px) {
 
-.align-right {
-    text-align: right;
-}
+    iframe {
+        display: none;
+    }
 
-.header {
-    margin-bottom: 30px;
-}
+    .container {
+        display: block;
+        max-width: 700px;
+        background: #ffffff;
+        margin: 0px auto 0px;
+        box-shadow: 1px 1px 2px #d9d9d9;
+        padding: 40px;
+        margin-top: 50px;
+    }
 
-.header .full-name {
-    font-size: 40px;
-    text-transform: uppercase;
-    text-shadow: 4px 4px 4px #eeeeee;
-    margin-bottom: 5px;
-}
+    .clear {
+        clear: both;
+        margin-bottom: 20px;
+    }
 
-.full-name .first-name {
-    font-weight: 600;
-}
+    .align-right {
+        text-align: right;
+    }
 
-.full-name .first-name::after {
-    content: "  "
-}
+    .header {
+        margin-bottom: 30px;
+    }
 
-.full-name .last-name {
-    font-weight: 400;
-}
+    .header .full-name {
+        font-size: 40px;
+        text-transform: uppercase;
+        text-shadow: 4px 4px 4px #eeeeee;
+        margin-bottom: 5px;
+    }
 
-.header .contact {
-    margin-bottom: 20px;
-}
+    .full-name .first-name {
+        font-weight: 600;
+    }
 
-.header .email,
-.header .phone,
-.header .website {
-    color: #999999;
-    font-weight: 300;
-}
+    .full-name .first-name::after {
+        content: "  "
+    }
 
-.header .separator {
-    height: 10px;
-    display: inline-block;
-    border-left: 2px solid #999999;
-    margin: 0px 10px;
-}
+    .full-name .last-name {
+        font-weight: 400;
+    }
 
-.header .position {
-    font-weight: bold;
-    display: inline-block;
-    margin-right: 10px;
-    text-decoration: underline;
-}
+    .header .contact {
+        margin-bottom: 20px;
+    }
 
-#education,
-#skills,
-#experience,
-#hackathons {
-    margin-bottom: 40px;
-    line-height: 20px;
-}
+    .header .email,
+    .header .phone,
+    .header .website {
+        color: #999999;
+        font-weight: 300;
+    }
 
-section .title {
-    letter-spacing: 2px;
-    color: #54AFE4;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
+    .header .separator {
+        height: 10px;
+        display: inline-block;
+        border-left: 2px solid #999999;
+        margin: 0px 10px;
+    }
 
-section .ele {
-    margin-bottom: 20px;
-}
+    .header .position {
+        font-weight: bold;
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: underline;
+    }
 
-section .ele:last-of-type {
-    margin-bottom: 0px;
-}
+    #education,
+    #skills,
+    #experience,
+    #hackathons {
+        margin-bottom: 40px;
+        line-height: 20px;
+    }
 
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: baseline;
-}
+    section .title {
+        letter-spacing: 2px;
+        color: #54AFE4;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
 
-#education .name,
-#skills-categories,
-#experience .job-title,
-#hackathons .organizer {
-    font-weight: bold;
-}
+    section .ele {
+        margin-bottom: 20px;
+    }
 
-#education .degree,
-#hackathons .award {
-    font-style: oblique;
-}
+    section .ele:last-of-type {
+        margin-bottom: 0px;
+    }
 
-#education .courses,
-.list-pad {
-    padding-left: 1em;
-    font-size: 12px;
-}
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: baseline;
+    }
 
-#education .courses {
-    flex-wrap: wrap;
-    font-size: 11.6px;
-}
+    #education .name,
+    #skills-categories,
+    #experience .job-title,
+    #hackathons .organizer {
+        font-weight: bold;
+    }
 
-#education .courses li,
-.list-pad li {
-    list-style-position: inside;
-    list-style-type: disc;
-    margin-right: 1em;
-}
+    #education .degree,
+    #hackathons .award {
+        font-style: oblique;
+    }
 
-#education .courses li {
-    float: left;
-}
+    #education .courses,
+    .list-pad {
+        padding-left: 1em;
+        font-size: 12px;
+    }
 
-#skills-items .col-3,
-#skills-items .col-6 {
-    padding: 0 4px;
-    font-size: 12px;
-}
+    #education .courses {
+        flex-wrap: wrap;
+        font-size: 11.6px;
+    }
 
-#experience .loc,
-#hackathons .loc {
-    color: rgb(98, 98, 98);
-}
+    #education .courses li,
+    .list-pad li {
+        list-style-position: inside;
+        list-style-type: disc;
+        margin-right: 1em;
+    }
 
-#experience .loc::before,
-#hackathons .loc::before {
-    content: "@ ";
-}
+    #education .courses li {
+        float: left;
+    }
 
-#hackathons .award {
-    background-color: rgba(255, 255, 140, 0.8);
-}
+    #skills-items .col-3,
+    #skills-items .col-6 {
+        padding: 0 4px;
+        font-size: 12px;
+    }
 
-footer,
-footer a {
-    color: #ffffff;
+    #experience .loc,
+    #hackathons .loc {
+        color: rgb(98, 98, 98);
+    }
+
+    #experience .loc::before,
+    #hackathons .loc::before {
+        content: "@ ";
+    }
+
+    #hackathons .award {
+        background-color: rgba(255, 255, 140, 0.8);
+    }
+
+    footer,
+    footer a {
+        color: #ffffff;
+    }
 }
