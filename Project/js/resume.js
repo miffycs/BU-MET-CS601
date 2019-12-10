@@ -1,5 +1,5 @@
 // handle button onclick actions
-const url_resume = "https://miffychen.tech/cs601/final/assets/pets.json";
+const url_resume = "https://gist.githubusercontent.com/miffycs/384c0c9d86fad5ff07483e6c6d793569/raw/2a23be1c171b53ecb870ef8a698d75eae1984c42/resume.json";
 makeRequest(url_resume);
 
 // takes url, creates XMLHttpRequest to fetch data
